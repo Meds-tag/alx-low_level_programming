@@ -7,22 +7,22 @@
     *
     * Return: void
     */
-   void _print(char *str, int l)
+void _print(char *str, int l)
 {
-   int i, j;
+int i, j;
 
-   i = j = 0;
-   while (i < l)
-   {
-       if (str[i] != '0')
-           j = 1;
-       if (j || i == l - 1)
-           _putchar(str[i]);
-       i++;
-   }
+i = j = 0;
+while (i < l)
+{
+if (str[i] != '0')
+j = 1;
+if (j || i == l - 1)
+_putchar(str[i]);
+i++;
+}
 
-   _putchar('\n');
-   free(str);
+_putchar('\n');
+free(str);
 }
 
 /**
