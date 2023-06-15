@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  *_memcpy - a function that
- *
- *Return
+ *@dest : no
+ *Return : no
  */
 char *_memcpy(char *dest)
 {
