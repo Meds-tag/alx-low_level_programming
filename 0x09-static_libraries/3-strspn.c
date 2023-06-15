@@ -1,8 +1,7 @@
 #include "main.h"
 /**
  * _strspn - Entry point
- * @s: input
- * @accept: input
+ * @n: input
  * Return: Always 0 (Success)
  */
 unsigned int _strspn(int *n)
