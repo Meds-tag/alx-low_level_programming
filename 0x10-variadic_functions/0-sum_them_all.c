@@ -5,7 +5,7 @@
 /** Variadic function to add numbers **/
 int sum_them_all(const unsigned int n, ...)
 {
-	if (&n == NULL)
+	if (*n == NULL)
 		return;
 	int Sum = 0;
 
