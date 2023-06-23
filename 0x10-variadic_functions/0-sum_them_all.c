@@ -1,5 +1,6 @@
 #include <stdarg.h>
 #include <stdio.h>
+#include "variadic_functions.h"
 
 // Variadic function to add numbers
 int sum_them_all(const unsigned int n, ...)
