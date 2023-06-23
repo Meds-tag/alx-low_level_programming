@@ -5,7 +5,7 @@
 /** Variadic function to add numbers **/
 int sum_them_all(const unsigned int n, ...)
 {
-	if (n == NULL)
+	if (&n == NULL)
 		return;
 	int Sum = 0;
 
@@ -19,13 +19,13 @@ int sum_them_all(const unsigned int n, ...)
 **/
 	va_start(ptr, n);
 
-	for (int i = 0; i < n; i++)
+	for (unsigned int i = 0; i < n; i++)
 
-		// Accessing current variable
-		// and pointing to next one
+		/** Accessing current variable **/
+		/** and pointing to next one **/
 		Sum += va_arg(ptr, int);
 
-	// Ending argument list traversal
+	/** Ending argument list traversal **/
 	va_end(ptr);
 
 	return Sum;
