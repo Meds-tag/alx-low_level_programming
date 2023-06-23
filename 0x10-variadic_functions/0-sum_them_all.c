@@ -6,14 +6,15 @@
 /** Variadic function to add numbers **/
 int sum_them_all(const unsigned int n, ...)
 {
+	int Sum=0;
+	va_list ptr;
+	va_start(ptr, n);
 	if (n == 0)
 		exit(EXIT_SUCCESS);
-	int Sum;
-	Sum=0;
 
 	/** Declaring pointer to the **/
 	/** argument list **/
-	va_list ptr;
+	
 
 /**
 * Initializing argument to the
