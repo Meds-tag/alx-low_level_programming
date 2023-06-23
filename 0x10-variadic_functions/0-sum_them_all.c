@@ -6,10 +6,10 @@
 /** Variadic function to add numbers **/
 int sum_them_all(const unsigned int n, ...)
 {
-	if (*n == NULL)
+	if (n == 0)
 		exit(EXIT_SUCCESS);
 	int Sum;
-	sum=0;
+	Sum=0;
 
 	/** Declaring pointer to the **/
 	/** argument list **/
