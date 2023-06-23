@@ -9,6 +9,7 @@ int sum_them_all(const unsigned int n, ...)
 	int Sum=0;
 	va_list ptr;
 	va_start(ptr, n);
+	unsigned int i;
 	if (n == 0)
 		exit(EXIT_SUCCESS);
 
@@ -20,7 +21,6 @@ int sum_them_all(const unsigned int n, ...)
 * Initializing argument to the
 * list pointer
 **/
-	va_start(ptr, n);
 
 	for (unsigned int i = 0; i < n; i++)
 
