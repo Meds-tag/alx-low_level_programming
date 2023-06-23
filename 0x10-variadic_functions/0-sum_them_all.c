@@ -3,33 +3,24 @@
 #include <stdlib.h>
 #include "variadic_functions.h"
 
-/** Variadic function to add numbers **/
+/**
+ * sum_them_all - variadic func taht returns the sum of all its paramters.
+ * @n: The number of paramters passed to the function.
+ *
+ * Return: If n == 0 - 0.
+ *         else - the sum of all parameters
+ */
 int sum_them_all(const unsigned int n, ...)
 {
-	int Sum=0;
-	va_list ptr;
-	va_start(ptr, n);
-	unsigned int i;
-	if (n == 0)
-		exit(EXIT_SUCCESS);
+	va_list ap;
+	unsigned int i, sum = 0;
 
-	/** Declaring pointer to the **/
-	/** argument list **/
-	
-
-/**
-* Initializing argument to the
-* list pointer
-**/
+	va_start(ap, n);
 
 	for (i = 0; i < n; i++)
+		sum += va_arg(ap, int);
 
-		/** Accessing current variable **/
-		/** and pointing to next one **/
-		Sum += va_arg(ptr, int);
+	va_end(ap);
 
-	/** Ending argument list traversal **/
-	va_end(ptr);
-
-	return Sum;
+	return (sum);
 }
