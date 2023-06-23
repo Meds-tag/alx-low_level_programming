@@ -2,19 +2,21 @@
 #include <stdio.h>
 #include "variadic_functions.h"
 
-// Variadic function to add numbers
+/** Variadic function to add numbers **/
 int sum_them_all(const unsigned int n, ...)
 {
 	if (n == NULL)
 		return;
 	int Sum = 0;
 
-	// Declaring pointer to the
-	// argument list
+	/** Declaring pointer to the **/
+	/** argument list **/
 	va_list ptr;
 
-	// Initializing argument to the
-	// list pointer
+/**
+* Initializing argument to the
+* list pointer
+**/
 	va_start(ptr, n);
 
 	for (int i = 0; i < n; i++)
